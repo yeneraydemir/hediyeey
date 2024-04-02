@@ -1,0 +1,7 @@
+{
+  "name": "Hediyeey",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}
