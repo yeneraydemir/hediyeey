@@ -2,22 +2,23 @@
   <ion-page>
     <ion-header>
       <ion-toolbar>
-        <ion-title>Tab 2</ion-title>
-      </ion-toolbar>
-    </ion-header>
-    <ion-content :fullscreen="true">
-      <ion-header collapse="condense">
-        <ion-toolbar>
-          <ion-title size="large">Tab 2</ion-title>
-        </ion-toolbar>
-      </ion-header>
+       <ion-buttons slot="start">
+        <!-- Geri butonu için router-link -->
+        <router-link to="/tabs/tab1">
+       <ion-icon :icon="chevronBack" color="primary" size="large"></ion-icon>
+      </router-link>
+     </ion-buttons>
+    <ion-title>Find</ion-title>
+   </ion-toolbar>
+  </ion-header>
 
-      <ExploreContainer name="Tab 2 page" />
-    </ion-content>
+      <ExploreContainer name="Tab 3 page" />
   </ion-page>
 </template>
 
 <script setup lang="ts">
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
+import { IonPage, IonHeader, IonToolbar, IonTitle, } from '@ionic/vue';
 import ExploreContainer from '@/components/ExploreContainer.vue';
+import { chevronBack,  } from 'ionicons/icons';
+
 </script>
